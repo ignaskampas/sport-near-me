@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.AddPostActivity" >
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginTop="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="Create a post:"
+            android:textSize="@dimen/usual_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/post_text"
+            android:hint="Write a post.."
+            android:textSize="@dimen/usual_text_size"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/text_box_padding" />
+
+        <TextView
+            android:text="@string/sport"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_sport"
+            android:hint="Sport.."
+            android:textSize="@dimen/usual_text_size"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Event's location:"
+            android:textSize="@dimen/usual_text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/address_nr"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nr.."
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <EditText
+            android:id="@+id/address_street"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Street.."
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <EditText
+            android:id="@+id/address_area"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Area.."
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <EditText
+            android:id="@+id/address_city"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="City.."
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <EditText
+            android:id="@+id/address_country"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Country.."
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <EditText
+            android:id="@+id/address_post_code"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Post code.."
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:padding="@dimen/text_box_padding"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:textSize="@dimen/usual_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/submit_post"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</ScrollView>

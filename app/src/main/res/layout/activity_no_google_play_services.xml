@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/page_margin"
+    android:paddingHorizontal="16dp"
+    tools:context=".activities.NoGooglePlayServicesActivity">
+
+    <TextView
+        android:paddingLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tv_no_google_play_services_notf"
+        android:text="@string/no_google_play_services_explanation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:textAllCaps="false"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_no_google_play_services_notf"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_try_again"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sport Finder</string>
+    <string name="facebook_app_id">1234567891234567</string>
+    <string name="fb_login_protocol_scheme">fb1234567891234567</string>
+    <color name="white">#FFFFFF</color>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+    <string name="bio_title">Bio:</string>
+    <string name="no_google_play_services_explanation">Sport Finder won\'t run without Google Play services, which are not supported by your device.</string>
+    <string name="try_again">Try again</string>
+    <string name="event_location_title">Event\'s Location:</string>
+    <string name="postions">Postions</string>
+    <string name="share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="write_a_bio_hint">Write a bio...</string>
+    <string name="update_bio">Update Bio</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="chat">Chat</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="add_post">Add Post</string>
+    <string name="logout">Logout</string>
+    <string name="follow">Follow</string>
+    <string name="radius">Radius:</string>
+    <string name="save">Save</string>
+    <string name="submit_post">Submit Post</string>
+    <string name="sport">Sport:</string>
+    <string-array name="length_units">
+        <item>miles</item>
+        <item>kilometers</item>
+    </string-array>
+</resources>

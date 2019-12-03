@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/page_margin"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="@dimen/page_margin"
+    tools:context=".activities.FilterOptionsActivity">
+
+    <TextView
+        android:id="@+id/tv_filter_options"
+        android:text="Filter Options"
+        android:textSize="@dimen/usual_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="@dimen/usual_text_size"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_filter_options"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_radius"
+        android:text="@string/radius"
+        android:textSize="@dimen/usual_text_size"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="31.4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cb_location"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_radius"
+        android:textSize="@dimen/usual_text_size"
+        android:layout_marginLeft="6.2dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="7dp"
+        android:hint="..."
+        app:layout_constraintTop_toBottomOf="@+id/cb_location"
+        app:layout_constraintStart_toEndOf="@id/tv_radius"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_length_unit"
+        android:layout_marginLeft="5.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cb_location"
+        app:layout_constraintStart_toEndOf="@+id/et_radius" />
+
+    <CheckBox
+        android:id="@+id/cb_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport: "
+        android:textSize="@dimen/usual_text_size"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_radius"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_sport"
+        android:textSize="@dimen/usual_text_size"
+        android:layout_marginLeft="6.2dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="7dp"
+        android:hint="..."
+        app:layout_constraintTop_toBottomOf="@+id/tv_radius"
+        app:layout_constraintStart_toEndOf="@id/cb_sport"
+        />
+
+    <Button
+        android:id="@+id/btn_save_filter_options"
+        android:text="@string/save"
+        android:textSize="@dimen/usual_text_size"
+        android:textAllCaps="false"
+        android:minHeight="5dip"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_length_unit"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

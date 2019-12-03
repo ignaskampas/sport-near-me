@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/page_margin"
+    android:layout_marginRight="@dimen/page_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/snippet_profile_name_and_photo"
+        layout="@layout/snippet_profile_name_and_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <include android:id="@+id/snippet_follow_section"
+        layout="@layout/snippet_follow_section"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="0.66"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/snippet_profile_name_and_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_follow"/>
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:text="@string/follow"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/snippet_profile_name_and_photo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_message" />
+
+    <Button
+        android:id="@+id/btn_message"
+        android:text="Message"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/snippet_profile_name_and_photo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/bio_title"
+        android:text="@string/bio_title"
+        android:textSize="@dimen/usual_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/snippet_follow_section"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_bio"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/text_box"
+        android:padding="@dimen/text_box_padding"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bio_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_post_list"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_bio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
